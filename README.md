@@ -8,8 +8,8 @@
 ![Status](https://img.shields.io/badge/Status-Intentionally%20Vulnerable-red?style=for-the-badge)
 ![Purpose](https://img.shields.io/badge/Purpose-Ethical%20Hacking%20Lab-orange?style=for-the-badge)
 
-> ⚠️ **PERINGATAN**: Aplikasi ini **SENGAJA DIBUAT RENTAN** untuk tujuan edukasi.
-> **JANGAN** deploy ke server publik atau production environment!
+> ⚠️ **PERINGATAN**: Aplikasi ini **SENGAJA DIBUAT RENTAN** untuk tujuan edukasi
+> !
 
 </div>
 
