@@ -1,59 +1,188 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<!-- Laravel Logo -->
+<img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="300" alt="Laravel Logo"/>
 
-## About Laravel
+<br/>
+<br/>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<!-- Hacking-style title banner -->
+```
+╔══════════════════════════════════════════════════════════╗
+║   ██╗  ██╗ █████╗  ██████╗██╗  ██╗██╗      █████╗██████╗  ║
+║   ██║  ██║██╔══██╗██╔════╝██║ ██╔╝██║     ██╔══██╗██╔══██╗ ║
+║   ███████║███████║██║     █████╔╝ ██║     ███████║██████╔╝ ║
+║   ██╔══██║██╔══██║██║     ██╔═██╗ ██║     ██╔══██║██╔══██╗ ║
+║   ██║  ██║██║  ██║╚██████╗██║  ██╗███████╗██║  ██║██████╔╝ ║
+║   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝  ║
+║              L A B  —  E T H I C A L  H A C K I N G         ║
+╚══════════════════════════════════════════════════════════╝
+```
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<br/>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<!-- Badges -->
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
+![Purpose](https://img.shields.io/badge/Purpose-Educational%20Only-orange?style=for-the-badge)
 
-## Learning Laravel
+<br/>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+> *"The quieter you become, the more you are able to hear."* — Kali Linux
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+</div>
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🔐 Tentang Project Ini
 
-### Premium Partners
+**HackLab** adalah sebuah **web application lab** yang dibangun dengan framework **Laravel**, dirancang khusus sebagai lingkungan latihan yang aman untuk belajar **Ethical Hacking** dan **Penetration Testing**.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Lab ini menyediakan berbagai skenario kerentanan (*vulnerabilities*) yang sengaja dibuat untuk tujuan pembelajaran — membantu kamu memahami cara kerja serangan siber dari sudut pandang seorang attacker, sekaligus belajar cara mempertahankannya sebagai seorang defender.
 
-## Contributing
+> ⚠️ **DISCLAIMER:** Lab ini **hanya untuk tujuan edukasi**. Jangan gunakan teknik yang dipelajari di sini pada sistem yang bukan milikmu atau tanpa izin tertulis. Segala penyalahgunaan adalah tanggung jawab pengguna sepenuhnya.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 🎯 Tujuan & Sasaran
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```
+[ TARGET ACQUIRED ]
 
-## Security Vulnerabilities
+  ✅  Memahami konsep dasar kerentanan web (OWASP Top 10)
+  ✅  Latihan teknik penetration testing secara legal & aman
+  ✅  Mengembangkan kemampuan sebagai ethical hacker
+  ✅  Belajar dari perspektif attacker & defender
+  ✅  Persiapan sertifikasi (CEH, OSCP, eJPT, dsb.)
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 🧰 Tech Stack
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+| Komponen | Teknologi |
+|----------|-----------|
+| **Framework** | Laravel (PHP) |
+| **Database** | MySQL / SQLite |
+| **Frontend** | Blade + Tailwind CSS |
+| **Auth** | Laravel Breeze |
+| **Server** | Apache / Nginx |
+| **Environment** | PHP 8.x |
+
+---
+
+## 🗂️ Struktur Lab & Modul
+
+```
+hacklab/
+├── 🔴  SQLi Lab          — SQL Injection (Classic, Blind, Time-Based)
+├── 🟠  XSS Lab           — Cross-Site Scripting (Reflected, Stored, DOM)
+├── 🟡  IDOR Lab          — Insecure Direct Object Reference
+├── 🟢  Auth Lab          — Broken Authentication & Session Management
+├── 🔵  CSRF Lab          — Cross-Site Request Forgery
+├── 🟣  File Upload Lab   — Unrestricted File Upload
+├── ⚪  LFI/RFI Lab       — Local & Remote File Inclusion
+└── 🔒  Secure Coding     — Contoh kode yang aman sebagai perbandingan
+```
+
+---
+
+## ⚡ Instalasi & Setup
+
+### Prasyarat
+
+Pastikan sistem kamu sudah terinstall:
+- PHP >= 8.1
+- Composer
+- MySQL / MariaDB
+- Node.js & NPM
+
+### Langkah Instalasi
+
+```bash
+# 1. Clone repository ini
+git clone https://github.com/username/hacklab.git
+cd hacklab
+
+# 2. Install dependencies PHP
+composer install
+
+# 3. Install dependencies Node
+npm install && npm run build
+
+# 4. Salin file environment
+cp .env.example .env
+
+# 5. Generate application key
+php artisan key:generate
+
+# 6. Setup database di file .env, lalu jalankan migrasi
+php artisan migrate --seed
+
+# 7. Jalankan server lokal
+php artisan serve
+```
+
+> 🌐 Akses lab di: `http://localhost:8000`
+
+---
+
+## 🛡️ Etika & Aturan Penggunaan
+
+```
+╔─────────────────────────────────────────────────────╗
+│              ⚖️  KODE ETIK PENGGUNA                  │
+├─────────────────────────────────────────────────────┤
+│  [✓]  Gunakan HANYA di lingkungan lab ini            │
+│  [✓]  Jangan deploy lab ini ke server publik         │
+│  [✓]  Hormati privasi dan data orang lain            │
+│  [✓]  Gunakan ilmu ini untuk kebaikan (blue team)    │
+│  [✗]  JANGAN gunakan pada sistem tanpa izin          │
+│  [✗]  JANGAN gunakan untuk tujuan ilegal             │
+╚─────────────────────────────────────────────────────╝
+```
+
+---
+
+## 📚 Referensi & Sumber Belajar
+
+- 🌐 [OWASP Top 10](https://owasp.org/www-project-top-ten/)
+- 📖 [HackTricks](https://book.hacktricks.xyz/)
+- 🖥️ [TryHackMe](https://tryhackme.com/)
+- 💻 [HackTheBox](https://www.hackthebox.com/)
+- 🎓 [PortSwigger Web Security Academy](https://portswigger.net/web-security)
+- 🇮🇩 [Hacktrace](https://hacktrace.id/) — Platform CTF Lokal Indonesia
+
+---
+
+## 🤝 Kontribusi
+
+Kontribusi sangat terbuka! Jika kamu ingin menambahkan modul baru, memperbaiki bug, atau meningkatkan dokumentasi:
+
+1. Fork repository ini
+2. Buat branch baru: `git checkout -b fitur/nama-modul`
+3. Commit perubahan: `git commit -m 'feat: tambah modul XSS'`
+4. Push ke branch: `git push origin fitur/nama-modul`
+5. Buat Pull Request
+
+---
+
+## 📄 Lisensi
+
+Project ini dilisensikan di bawah [MIT License](LICENSE) — bebas digunakan untuk keperluan edukasi.
+
+---
+
+<div align="center">
+
+**Dibuat dengan ❤️ untuk komunitas keamanan siber Indonesia**
+
+```
+[ STATUS: LEARNING IN PROGRESS... ]
+[ ACCESS GRANTED — HAPPY HACKING! ]
+```
+
+</div>
