@@ -256,7 +256,7 @@ Lab ini mengandung **12 kerentanan** yang dapat ditemukan dan dieksploitasi:
 
 ## 👤 Author
 
-**harukato588** — Proyek latihan ethical hacking & bug hunting
+**HARU_KATO** — Proyek latihan ethical hacking & bug hunting
 
 ---
 
