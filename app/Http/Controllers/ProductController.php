@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller
 {
-    // ⚠️ VULN #1: SQL Injection — input langsung dimasukkan ke raw query tanpa sanitasi
-    // ⚠️ VULN #2: Reflected XSS — $search dikembalikan ke view tanpa escaping
+    //  VULN #1: SQL Injection — input langsung dimasukkan ke raw query tanpa sanitasi
+    // VULN #2: Reflected XSS — $search dikembalikan ke view tanpa escaping
     public function index(Request $request)
     {
         $search = $request->input('search', '');
@@ -24,7 +24,7 @@ class ProductController extends Controller
         return view('products.index', compact('products', 'search'));
     }
 
-    // ⚠️ VULN #3: IDOR — tidak ada pengecekan apakah produk aktif atau milik siapa
+    //  VULN #3: IDOR — tidak ada pengecekan apakah produk aktif atau milik siapa
     public function show(Request $request, $id)
     {
         // Tidak pakai model binding yang aman, langsung query dengan ID mentah
@@ -34,7 +34,7 @@ class ProductController extends Controller
                                WHERE products.id = " . $id)[0] ?? null;
 
         if (!$product) {
-            // ⚠️ VULN #12: Information Disclosure — pesan error detail
+            //  VULN #12: Information Disclosure — pesan error detail
             abort(404, "Product dengan ID $id tidak ditemukan di database.");
         }
 
